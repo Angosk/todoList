@@ -28,15 +28,15 @@
   align-items: center;
   height: 48px;
   width: 48px;
-  font-size: 20px;
-  font-weight: bold;
-  /* background-color: #CCC; */
+  font-size: 24px;
+  /* font-weight: bold;
+  background-color: #CCC; */
 }
 
 .Icon-check {
   position: absolute;
-  left: 16px;
-  top: 16px;
+  left: 8px;
+  top: 8px;
 }
 
 .Icon-check--active {
@@ -45,7 +45,7 @@
 
 .Icon-delete {
   position: absolute;
-  top: -2px;
+  top: -6px;
   right: -6px;
 }
 

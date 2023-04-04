@@ -7,6 +7,7 @@ import { TodoItem } from '../TodoItem';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { TodoForm } from "../TodoForm";
 import { Modal } from '../Modal';
+import imageNoTask from '../assets/imageNoTask.png'
 import './AppUI.css';
 
 function AppUI() {
@@ -25,8 +26,19 @@ function AppUI() {
         <TodoSearch/>
         <TodoList>
         {error && <p>Something is wrong, Reload...</p>}
-        {loading && <p>Loading yours tasks...</p>}
-        {(!loading && !searchedTasks.length) && <p>Create your first task!</p>}
+        {loading &&
+            <div className="loadingSkeleton">
+                <div className="background"> Loading...</div>
+            </div>
+        }
+        {(!loading && !searchedTasks.length) &&
+            <div className="containerNoTask">
+                <h2 className="hederNoTask">Improve your day, create your first task!</h2>
+                <img
+                    className="imageNoTask"
+                    src={imageNoTask}
+                    alt="image for invite a create a task" />
+            </div>}
             {searchedTasks.map(task => (
                 <TodoItem
                     key={task.text}

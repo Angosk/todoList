@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 .container {
     background: rgba(0, 0, 0, 0.811);
     width: 100vw;
@@ -14,7 +18,7 @@
 .boxContainer {
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    background: #e0e0e0;
+    background:linear-gradient(#e66465, #008080);
     width: 300px;
     height: 300px;
     display: flex;
@@ -26,6 +30,7 @@
 .textBox {
     font-size: 22px;
     font-weight: bold;
+    color: whitesmoke;
 }
 
 textarea {
@@ -47,7 +52,7 @@ textarea {
 .buttonCancel{
     color: #ffffff;
     padding: 15px 15px;
-    background-color: rgba(255, 115, 0, 0.747);
+    background-color: #e66465;
     background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
     box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
     border-radius: 14px;
